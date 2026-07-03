@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  background-color: #0B0E14;
+  color: #F6F4EE;
+}
+
+.seal {
+  filter: drop-shadow(0 0 24px rgba(201, 162, 75, 0.25));
+}
+
+.route-line {
+  stroke-dasharray: 4 6;
+  animation: dash 30s linear infinite;
+}
+
+@keyframes dash {
+  to { stroke-dashoffset: -200; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .route-line { animation: none; }
+}

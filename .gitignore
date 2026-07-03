@@ -1,0 +1,22 @@
+# env / secrets
+.env
+.env.local
+*.env
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# node
+node_modules/
+.next/
+out/
+
+# local dev document storage (only used when Supabase isn't configured)
+backend/data/
+
+# misc
+.DS_Store
+*.log
